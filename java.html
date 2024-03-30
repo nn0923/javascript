@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <script>
+
+        // no argument, no return
+           function sayHIieee(){
+            console.log('Hieee');
+           }
+           sayHIieee();
+                       
+           //argument , no return
+           function sayHieee(studentname){
+            console.log ("Hieee $ {studentname}" );
+           }
+           sayHieee('Neha');
+           sayHieee('Sweety');
+
+           //no argument, but return
+           function passingMarks(){
+            return 70;
+           }
+           const passingMarks = passingMarks();
+           console.log(passingMarks);
+
+           //with argument & return
+           function calculateareaofcircle(pie,r,r){
+            const area = pie*r*r;
+            return area;
+           }
+           const area1 = calculateareaofcircle(3.14,5,5);
+           console.log('Area of circle is : ${area1}');
+
+           const area2 = calculateareaofcircle(3.14,2,2);
+           console.log('Area of circle is : ${area2}');
+   
+
+        
+    </script>
+</body>
+</html>
