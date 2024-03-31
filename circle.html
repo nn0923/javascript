@@ -6,8 +6,8 @@
     <title>JS</title>
 <style>
 body{
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     min-height: 100vh;
 }
 .container {
@@ -52,12 +52,13 @@ cursor: pointer;
 
 </head>
 <body>
-    <h1 class="app-title"> Area of Rectangle  Calculator </h1>
+    <h1 class="app-title"> Area of Circle Calculator </h1>
 
     <div class="container">
      
-       <input type="text" placeholder="Enter length" class="number-input" id="num1"/>
-       <input type="text" placeholder="Enter width" class="number-input" id="num2"/>
+       <input type="text" placeholder="Enter pie" class="number-input" id="num1"/>
+       <input type="text" placeholder="Enter radius" class="number-input" id="num2"/>
+       <input type="text" placeholder="Enter radius" class="number-input" id="num3"/>
        <p class="answer" id="ans"></p>
         
      
@@ -70,11 +71,12 @@ cursor: pointer;
     function calculate(){
  const input1 = document.getElementById("num1");
  const input2 = document.getElementById("num2");
+ const input3 = document.getElementById("num3");
  const ansElement = document.getElementById("ans"); 
 
- const area= parseInt(input1.value)  *  parseInt(input2.value);
+ const area= parseInt(input1.value)  *  parseInt(input2.value)* parseInt(input3.value);
  
- ansElement.innerHTML = `Area : ${area} m<sup >2 </sup>` ;
+ ansElement.innerHTML = `Area : ${area} cm<sup >2 </sup>` ;
     }
 
     function reset(){
@@ -84,6 +86,7 @@ cursor: pointer;
 
          input1.value = "";
          input2.value = "";
+         input3.value = "";
          ansElement.innerText = "";
     }
 </script>

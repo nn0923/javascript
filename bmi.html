@@ -6,8 +6,9 @@
     <title>JS</title>
 <style>
 body{
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
     min-height: 100vh;
 }
 .container {
@@ -52,12 +53,12 @@ cursor: pointer;
 
 </head>
 <body>
-    <h1 class="app-title"> Area of Rectangle  Calculator </h1>
+    <h1 class="app-title"> BMI  Calculator </h1>
 
     <div class="container">
      
-       <input type="text" placeholder="Enter length" class="number-input" id="num1"/>
-       <input type="text" placeholder="Enter width" class="number-input" id="num2"/>
+       <input type="text" placeholder="Enter Height (in cm)" class="number-input" id="num1"/>
+       <input type="text" placeholder="Enter weight (in kg)" class="number-input" id="num2"/>
        <p class="answer" id="ans"></p>
         
      
@@ -72,9 +73,9 @@ cursor: pointer;
  const input2 = document.getElementById("num2");
  const ansElement = document.getElementById("ans"); 
 
- const area= parseInt(input1.value)  *  parseInt(input2.value);
+ const area= parseInt(input2.value)  %  parseInt(input1.value) * parseInt(input1.value) ;
  
- ansElement.innerHTML = `Area : ${area} m<sup >2 </sup>` ;
+ ansElement.innerHTML = `BMI: ${area}` ;
     }
 
     function reset(){
